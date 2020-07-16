@@ -19,6 +19,8 @@ export class AppComponent implements OnInit{
   countryCode = '';
   locations: any[]; 
   weathers:  any[];   
+  nextdays:  any[];   
+  astronomys:  any[];   
 
   constructor(
     private weatherService: WeatherService,
@@ -52,6 +54,8 @@ export class AppComponent implements OnInit{
     else if (city == 'caracas') {
       let country = 'distrito-federal'
       this.getWeather(city,country);   
+    }else if (city == '') {
+      alert('Debe ingresar al menos una Ciudad');  
     }else{
       let city = this.registerForm.controls.cityName.value;
       let country = this.registerForm.controls.countryCode.value;
@@ -67,9 +71,12 @@ export class AppComponent implements OnInit{
       .getWeather(cityName, countryCode)
       .subscribe(
         res => {
+          console.log(res);
+          
           this.locations = res.data.request; 
           
           this.weathers = res.data.current_condition; 
+          this.nextdays = res.data.weather; 
           
         },
         err => {
