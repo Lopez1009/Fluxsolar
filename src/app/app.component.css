@@ -1,0 +1,30 @@
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .Fluxsolar{
+    padding: 0% 8%;
+  }
+  
+  .nav-item {
+    margin-left: 30px;
+  }
+  
+  .nav-link{
+    padding: 0 10px;
+  }
+  
+   .Weather{
+    padding: 2% 8%;
+    margin-top: 15px;
+    align-content: right;
+  }
+  
+  .Weatherimg{
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+    width: 10%; 
+  }
+ 
