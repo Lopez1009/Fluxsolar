@@ -4,8 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from "@angular/forms"; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';  
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AppRoutingModule } from './app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { AppComponent } from './app.component';
 
 
@@ -15,8 +14,7 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule, 
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
